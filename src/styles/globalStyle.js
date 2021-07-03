@@ -15,6 +15,12 @@ export const GlobalStyle = createGlobalStyle`
     body {
         min-height: 100vh; //test
     }
+	li {
+		list-style: none;
+	}
+	a {
+		text-decoration: none;
+	}
 `;
 export const colors = {
 	mainColor: '#3d2514',
@@ -40,6 +46,7 @@ export const paddings = {
 	paddingOuter2: '4rem',
 	padding1: '1rem',
 	padding2: '2.5rem',
+	padding3: '3rem',
 	paddingBtn1: '1rem 1.5rem',
 	paddingBtn2: '1.5rem 2.5rem',
 };
@@ -51,7 +58,7 @@ export const margins = {
 	gap2: '1.5rem',
 	marginOuter1: '10rem', // between sections if sound large
 	marginOuter2: '5rem', // between sections if sound small
-	gap3: '2rem', // between items horizontal
+	gap3: '2.3rem', // between items horizontal
 	gap4: '2.5rem', // between images
 	gap5: '4.3rem', // between text and images horizontal
 };
