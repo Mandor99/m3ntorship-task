@@ -20,11 +20,6 @@ export const HeaderStyle = styled.header`
 	}
 `;
 
-export const Container = styled.div`
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-`;
 export const HeaderWrapper = styled.div`
 	position: relative;
 	display: flex;

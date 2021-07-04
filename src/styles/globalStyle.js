@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
     *, *::before, *::after {
@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 100%;
     }
     body {
-        min-height: 100vh; //test
+        min-height: 1000vh; //test
     }
 	li {
 		list-style: none;
@@ -49,6 +49,7 @@ export const paddings = {
 	padding3: '3rem',
 	paddingBtn1: '1rem 1.5rem',
 	paddingBtn2: '1.5rem 2.5rem',
+	paddingTxt: '1.8rem 1.5rem',
 };
 
 export const margins = {
@@ -83,3 +84,9 @@ export const media = {
 	tab: `@media only screen and (max-width: ${bp.tab})`,
 	lap: `@media only screen and (max-width: ${bp.lap})`,
 };
+
+export const Container = styled.div`
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+`;

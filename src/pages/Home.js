@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Header from '../components/Header';
+import Meals from '../components/Meals';
 
 function Home() {
-    return (
-        <div>
-            <h2>home</h2>
-        </div>
-    )
+	return (
+		<div>
+			<Header />
+			<Meals />
+		</div>
+	);
 }
 
-export default Home
+export default Home;
