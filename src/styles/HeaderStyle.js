@@ -1,6 +1,13 @@
 import styled from 'styled-components';
 import pattern from '../images/pattern.png';
-import { colors, fonts, margins, paddings, shadows } from './globalStyle';
+import {
+	colors,
+	fonts,
+	margins,
+	paddings,
+	shadows,
+	sizes,
+} from './globalStyle';
 
 export const HeaderStyle = styled.header`
 	height: 100vh;
@@ -39,7 +46,7 @@ export const ContentWrapper = styled.div`
 `;
 
 export const Note = styled.p`
-	font-size: 24px;
+	font-size: ${sizes.size1};
 	line-height: 33px;
 	color: ${colors.mainColor};
 	font-weight: 400;
@@ -51,7 +58,7 @@ export const Note = styled.p`
 `;
 
 export const BigTitle = styled.h1`
-	font-size: 114px;
+	font-size: ${sizes.size8};
 	line-height: 62px;
 	color: ${colors.mainColor};
 	font-weight: 400;
@@ -63,7 +70,7 @@ export const BigTitle = styled.h1`
 `;
 
 export const SubTitle = styled.h2`
-	font-size: 56px;
+	font-size: ${sizes.size9};
 	line-height: 62px;
 	color: ${colors.mainColor};
 	font-weight: 400;
@@ -104,7 +111,7 @@ export const Div = styled.div`
 	align-items: center;
 
 	p {
-		font-size: 70px;
+		font-size: ${sizes.size10};
 		line-height: 50px;
 		color: #fff;
 		font-weight: 700;
@@ -113,7 +120,7 @@ export const Div = styled.div`
 		text-transform: uppercase;
 
 		small {
-			font-size: 30px;
+			font-size: ${sizes.size5};
 		}
 	}
 `;

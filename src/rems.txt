@@ -1,0 +1,16 @@
+// make sample slider
+
+1. data [{}, {}, {}]
+2. states ==>> [data value, active] => {
+    data value => {}
+    active => e.target.dataKey ==>> for dots
+}
+3. loop on data {} Keys => to get the length & make the dots which change the data when change dataKey
+4. to make it smoothly => setTimeOut(() => {}) in styled component to delay it after remove display none
+5. dataKey === Key {} data
+6. hover effect
+7. active effect => span[dataKey="${active}"] {...styles}
+8. onClick span ==>> {
+    setVl(data[e.target.getAttribute("dataKey")])
+    setActive(e.target.getAttribute("dataKey"))
+}

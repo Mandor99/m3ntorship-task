@@ -13,7 +13,8 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 100%;
     }
     body {
-        min-height: 1000vh; //test
+        /* min-height: 1000vh; //test */
+		overflow-x: hidden;
     }
 	li {
 		list-style: none;
@@ -38,6 +39,7 @@ export const colors = {
 export const shadows = {
 	shadow1: '3.936px 4.528px 0px #fee8bc',
 	shadow2: '18.656px 24.758px 21.5px rgba(0,0,0,0.17)',
+	shadow3: '32.147px 36.981px 49px rgba(0, 0, 0, 0.38)',
 };
 
 export const paddings = {
@@ -47,21 +49,27 @@ export const paddings = {
 	padding1: '1rem',
 	padding2: '2.5rem',
 	padding3: '3rem',
+	padding4: '1.5rem',
+	padding5: '10rem',
 	paddingBtn1: '1rem 1.5rem',
 	paddingBtn2: '1.5rem 2.5rem',
+	paddingBtn3: '.5rem 1.8rem',
+	paddingBtn4: '1.2rem 1.5rem',
 	paddingTxt: '1.8rem 1.5rem',
 };
 
 export const margins = {
+	gap0: '1rem',
 	gap1: '2.8rem',
 	gapShape: '12px',
 	gapItems: '3.5rem',
 	gap2: '1.5rem',
-	marginOuter1: '10rem', // between sections if sound large
+	marginOuter1: '9.4rem', // between sections if sound large
 	marginOuter2: '5rem', // between sections if sound small
 	gap3: '2.3rem', // between items horizontal
 	gap4: '2.5rem', // between images
 	gap5: '4.3rem', // between text and images horizontal
+	gap6: '1.8rem',
 };
 
 export const fonts = {
@@ -70,7 +78,18 @@ export const fonts = {
 	font3: 'Montserrat',
 };
 
-export const sizes = {};
+export const sizes = {
+	size1: '1.5rem',
+	size2: '3rem',
+	size3: '1rem',
+	size4: '2.3rem',
+	size5: '1.8rem',
+	size6: '2.6rem',
+	size7: '1.3rem',
+	size8: '7.1rem',
+	size9: '3.5rem',
+	size10: '4.3rem',
+};
 
 export const bp = {
 	mobile: '500px',

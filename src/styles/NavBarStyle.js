@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors, fonts, margins, paddings } from './globalStyle';
+import { colors, fonts, margins, paddings, sizes } from './globalStyle';
 
 export const Nav = styled.nav`
 	padding: ${paddings.padding3 / 2} 0 0 0;
@@ -36,7 +36,7 @@ export const IconDelivery = styled.img`
 `;
 
 export const PhoneDetails = styled.figcaption`
-	font-size: 1rem;
+	font-size: ${sizes.size3};
 	line-height: 71px;
 	color: ${colors.mainColor};
 	font-weight: 700;
@@ -50,7 +50,7 @@ export const Items = styled.ul`
 `;
 
 export const Item = styled.li`
-	font-size: 21px;
+	font-size: ${sizes.size7};
 	letter-spacing: 4px;
 	color: ${colors.mainColor};
 	font-weight: 700;
