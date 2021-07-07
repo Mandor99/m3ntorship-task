@@ -9,9 +9,9 @@ import {
 	Btn2,
 } from '../styles/BurgerStyle';
 import { Container } from '../styles/globalStyle';
-import BurgerKind1 from '../images/Burger (1).png';
-import BurgerKind2 from '../images/Burger Image (1).png';
-import BurgerKind3 from '../images/Burger.png';
+import BurgerKind1 from '../images/burgerKind1.png';
+import BurgerKind2 from '../images/burgerKind2.png';
+import BurgerKind3 from '../images/burgerKind3.png';
 
 function Burgers() {
 	const burgerKinds = [

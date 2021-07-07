@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import pattern from '../images/pattern.png';
+import pattern from '../images/patternBG.png';
 import {
 	colors,
 	fonts,

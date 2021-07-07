@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Bottle from '../images/Bottle.png'
-import Burger from '../images/Burger (2).png'
-import Plate from '../images/Image2.png'
+import Bottle from '../images/bottle.png';
+import Burger from '../images/burgerForm.png';
+import Plate from '../images/plateForm.png';
 import {
 	Section,
 	FormStyle,
@@ -28,9 +28,13 @@ function Form() {
 
 	return (
 		<Section>
-            <img src={`${Burger}`} alt="burger" className="burger img-responsive" />
-            <img src={`${Bottle}`} alt="ketchup" className="bottle img-responsive" />
-            <img src={`${Plate}`} alt="burger plate" className="plate img-responsive" />
+			<img src={`${Burger}`} alt='burger' className='burger img-responsive' />
+			<img src={`${Bottle}`} alt='ketchup' className='bottle img-responsive' />
+			<img
+				src={`${Plate}`}
+				alt='burger plate'
+				className='plate img-responsive'
+			/>
 
 			<Container>
 				<SubTitle>Reservation</SubTitle>
@@ -50,7 +54,7 @@ function Form() {
 							onChange={handleInput(setEmail)}
 							type='email'
 							placeholder='EMAIL'
-                            required
+							required
 						/>
 					</InputWrapper>
 					<InputWrapper>

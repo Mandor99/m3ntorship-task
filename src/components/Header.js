@@ -12,7 +12,7 @@ import {
 	Div,
 } from '../styles/HeaderStyle';
 import NavBar from './NavBar';
-import BurgerImage from '../images/Burger Image.png';
+import BurgerImage from '../images/burgerHeader.png';
 
 function Header() {
 	return (

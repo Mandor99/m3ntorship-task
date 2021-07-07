@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import footerImage from '../images/footer.png';
+import footerImage from '../images/footerBG.png';
 import { fonts, margins, paddings, sizes } from './globalStyle';
 
 export const FooterStyle = styled.footer`

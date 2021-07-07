@@ -7,8 +7,6 @@ import {
 	colors,
 	sizes,
 } from './globalStyle';
-// import eventImage from '../images/Layer 1.png';
-// import eventImage2 from '../images/Food Image.png';
 
 export const Section = styled.section`
 	margin-top: ${margins.marginOuter1};

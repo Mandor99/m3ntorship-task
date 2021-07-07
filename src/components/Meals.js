@@ -9,9 +9,9 @@ import {
 	MealsWrapper,
 	Section,
 } from '../styles/MealsStyle';
-import Meal1 from '../images/left.png';
-import Meal2 from '../images/top.png';
-import Meal3 from '../images/bottom.png';
+import Meal1 from '../images/leftMeal.png';
+import Meal2 from '../images/topMeal.png';
+import Meal3 from '../images/bottomMeal.png';
 
 function Meals() {
 	return (
@@ -38,7 +38,6 @@ function Meals() {
 									more taste
 								</h2>
 							</Caption> */}
-							
 						</Fig2>
 						<Fig2 className='img-sm-2' image={Meal3}>
 							{/* <img src={`${Meal3}`} alt='meal 3' /> */}

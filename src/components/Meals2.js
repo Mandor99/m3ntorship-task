@@ -4,14 +4,13 @@ import {
 	Box1,
 	Box2,
 	Caption,
-	Fig1,
 	Fig2,
 	MealsWrapper,
 	Section,
 } from '../styles/Meals2Style';
-import Meal1 from '../images/left.png';
-import Meal2 from '../images/top.png';
-import Meal3 from '../images/bottom.png';
+import Meal1 from '../images/leftMeal.png';
+import Meal2 from '../images/topMeal.png';
+import Meal3 from '../images/bottomMeal.png';
 
 function Meals2() {
 	return (

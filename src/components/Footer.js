@@ -9,22 +9,10 @@ import {
 	Logo,
 	Wrapper,
 } from '../styles/FooterStyle';
-import FooterLogo from '../images/footerLogo.png';
-import spriteIcon from '../images/sprite.svg'
-// import instagramIcon from '../images/sprite.svg#icon-instagram'
-// import facebookIcon from '../images/sprite.svg#icon-facebook'
-// import twitterIcon from '../images/sprite.svg#icon-twitter'
-// import whatsappIcon from '../images/sprite.svg#icon-whatsapp'
+import FooterLogo from '../images/logoFooter.png';
+import spriteIcon from '../images/sprite.svg';
 
 function Footer() {
-	// svg.item__icon
-	//             use(xlink:href="../../img/sprite.svg#icon-home")
-	// svg {
-	// 	$size: 1.5rem;
-	// 	width: $size;
-	// 	height: $size;
-	// 	fill: currentColor;
-	// }
 	return (
 		<FooterStyle>
 			<Container>
@@ -44,45 +32,49 @@ function Footer() {
 							maecenas accumsan lacus vel facilisis.{' '}
 						</Info>
 						<Contact>
-                            <div className="iconWrapper">
-                                <svg className="icon">
-                                    <use href={`${spriteIcon}#icon-location`} />
-                                </svg>
-                                <p className='icon__location'>Main Road, Building Name, Country</p>
-                            </div>
-                            <div className="iconWrapper">
-                                <svg className="icon">
-                                    <use href={`${spriteIcon}#icon-envelope`} />
-                                </svg>
-                                <p className='icon__location'>                            info@companyname.com</p>
-                            </div>
-                        </Contact>
+							<div className='iconWrapper'>
+								<svg className='icon'>
+									<use href={`${spriteIcon}#icon-location`} />
+								</svg>
+								<p className='icon__location'>
+									Main Road, Building Name, Country
+								</p>
+							</div>
+							<div className='iconWrapper'>
+								<svg className='icon'>
+									<use href={`${spriteIcon}#icon-envelope`} />
+								</svg>
+								<p className='icon__location'> info@companyname.com</p>
+							</div>
+						</Contact>
 					</Box1>
 					<Box2>
-                        <p className='footer__copyRights'>&copy; Company Name 2020. All rights reserved.</p>
-                        <div className="contactWrapper">
-                            <div className="icon-wrapper">
-                                <svg className="icon">
-                                    <use href={`${spriteIcon}#icon-instagram`} />
-                                </svg>
-                            </div>
-                            <div className="icon-wrapper">
-                                <svg className="icon">
-                                    <use href={`${spriteIcon}#icon-facebook`} />
-                                </svg>
-                            </div>
-                            <div className="icon-wrapper">
-                                <svg className="icon">
-                                    <use href={`${spriteIcon}#icon-twitter`} />
-                                </svg>
-                            </div>
-                            <div className="icon-wrapper">
-                                <svg className="icon">
-                                    <use href={`${spriteIcon}#icon-whatsapp`} />
-                                </svg>
-                            </div>
-                        </div>
-                    </Box2>
+						<p className='footer__copyRights'>
+							&copy; Company Name 2020. All rights reserved.
+						</p>
+						<div className='contactWrapper'>
+							<div className='icon-wrapper'>
+								<svg className='icon'>
+									<use href={`${spriteIcon}#icon-instagram`} />
+								</svg>
+							</div>
+							<div className='icon-wrapper'>
+								<svg className='icon'>
+									<use href={`${spriteIcon}#icon-facebook`} />
+								</svg>
+							</div>
+							<div className='icon-wrapper'>
+								<svg className='icon'>
+									<use href={`${spriteIcon}#icon-twitter`} />
+								</svg>
+							</div>
+							<div className='icon-wrapper'>
+								<svg className='icon'>
+									<use href={`${spriteIcon}#icon-whatsapp`} />
+								</svg>
+							</div>
+						</div>
+					</Box2>
 				</Wrapper>
 			</Container>
 		</FooterStyle>
