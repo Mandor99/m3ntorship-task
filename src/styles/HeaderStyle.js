@@ -181,21 +181,21 @@ export const Div = styled.div`
 	align-items: center;
 
 	${media.desk} {
-		bottom: -9vh;
-		right: 20rem;
+		bottom: -11%;
+		right: 21rem;
 		width: 134px;
 		height: 134px;
 	}
 
 	${media.tab} {
-		bottom: -1vh;
-		right: 19rem;
+		bottom: 1%;
+		right: 20rem;
 		width: 100px;
 		height: 100px;
 	}
 
 	${media.mobile} {
-		bottom: 9vh;
+		bottom: 20%;
 		right: 2rem;
 		width: 65px;
 		height: 65px;

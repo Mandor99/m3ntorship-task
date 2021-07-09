@@ -78,7 +78,7 @@ export const sizes = {
 
 export const bp = {
 	mobileSm: '350px',
-	mobile: '540px',
+	mobile: '570px',
 	tab: '768px',
 	lap: '992px',
 	desk: '1200px',
