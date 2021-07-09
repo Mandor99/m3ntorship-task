@@ -11,20 +11,22 @@ import {
 } from './globalStyle';
 
 export const HeaderStyle = styled.header`
+	/* height: auto; */
 	height: 95vh;
 	background-color: ${colors.color3};
 	position: relative;
+	overflow: hidden;
 
 	${media.desk} {
 		height: 85vh;
 	}
 
 	${media.tab} {
-		height: 75vh;
+		height: 50vh;
 	}
 
 	${media.mobile} {
-		height: 75vh;
+		height: 65vh;
 	}
 
 	&::before {
@@ -56,6 +58,8 @@ export const Section = styled.section`
 export const ContentWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
+
+	/* margin-bottom: 15rem; */
 `;
 
 export const Note = styled.p`

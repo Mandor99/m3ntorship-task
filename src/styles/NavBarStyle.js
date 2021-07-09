@@ -8,6 +8,14 @@ export const Nav = styled.nav`
 	align-items: center;
 	position: relative;
 
+	${media.tab} {
+		margin-bottom: 4rem;
+	}
+
+	${media.mobile} {
+		margin-bottom: 0;
+	}
+
 	& .nav {
 		&__checkbox {
 			display: none;
@@ -42,15 +50,20 @@ export const Nav = styled.nav`
 			${media.tab} {
 				display: initial;
 				position: fixed;
-				top: 6.5%;
-				right: 4%;
+				top: 4%;
+				right: 5%;
 				z-index: 2000;
 				text-align: center;
-				width: 6rem;
-				height: 6rem;
+				width: 4rem;
+				height: 4rem;
 				border-radius: 50%;
 				background-color: ${colors.mainColor};
 				cursor: pointer;
+			}
+
+			${media.mobile} {
+				top: 7%;
+				right: 4%;
 			}
 
 			&--icon {
@@ -58,12 +71,12 @@ export const Nav = styled.nav`
 
 				${media.tab} {
 					display: inline-block;
-					width: 2.5rem;
+					width: 2rem;
 					height: 2px;
 					background-color: ${colors.white};
 					text-align: center;
 					position: relative;
-					margin-top: 3rem;
+					margin-top: 2rem;
 					transition: all 0.2s ease;
 
 					&::after,
@@ -71,7 +84,7 @@ export const Nav = styled.nav`
 						content: '';
 						position: absolute;
 						left: 0;
-						width: 2.5rem;
+						width: 2rem;
 						height: 2px;
 						background-color: ${colors.white};
 						text-align: center;
@@ -84,6 +97,9 @@ export const Nav = styled.nav`
 					&::after {
 						top: 0.8rem;
 					}
+				}
+
+				${media.mobile} {
 				}
 			}
 
@@ -101,18 +117,23 @@ export const Nav = styled.nav`
 
 			${media.tab} {
 				display: initial;
-				width: 5rem;
-				height: 5rem;
+				width: 2.5rem;
+				height: 2.5rem;
 				border-radius: 50%;
 				background: radial-gradient(
 					${colors.darkColor3},
 					${colors.lightColor3}
 				);
 				position: fixed;
-				top: 7.5%;
+				top: 5%;
 				right: 5%;
 				z-index: 1000;
 				transition: all 0.5s ease;
+			}
+
+			${media.mobile} {
+				top: 8%;
+				right: 7%;
 			}
 		}
 	}
@@ -123,6 +144,7 @@ export const LogoWrapper = styled.figure`
 
 	${media.tab} {
 		margin-top: ${margins.gapItems};
+		width: 200px;
 	}
 `;
 
