@@ -70,6 +70,7 @@ export const Info = styled.p`
 	font-family: ${fonts.font3};
 	margin-top: ${margins.gap6};
 	transition: all 0.3s ease-in-out;
+	margin-bottom: 3rem;
 
 	${media.desk} {
 		line-height: 25px;
@@ -81,7 +82,8 @@ export const Info = styled.p`
 `;
 
 export const Box2 = styled.div`
-	height: 70vh;
+	/* height: 70vh; */
+	height: auto;
 	& img {
 		height: 100%;
 
@@ -90,7 +92,8 @@ export const Box2 = styled.div`
 		}
 	}
 	${media.desk} {
-		height: 60vh;
+		/* height: 60vh; */
+		height: auto;
 	}
 
 	${media.tab} {
@@ -101,10 +104,12 @@ export const Box2 = styled.div`
 export const DotsWrapper = styled.div`
 	display: flex;
 	gap: 8px;
-	position: absolute;
-	bottom: 1.5rem;
+	/* position: absolute; */
+	/* bottom: 1.5rem; */
 
 	${media.tab} {
+		position: absolute;
+		bottom: 1.5rem;
 		left: 50%;
 		transform: translateX(-50%);
 	}
