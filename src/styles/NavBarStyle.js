@@ -62,7 +62,7 @@ export const Nav = styled.nav`
 			}
 
 			${media.mobile} {
-				top: 7%;
+				top: 6%;
 				right: 4%;
 			}
 
@@ -132,7 +132,7 @@ export const Nav = styled.nav`
 			}
 
 			${media.mobile} {
-				top: 8%;
+				top: 7%;
 				right: 7%;
 			}
 		}
@@ -218,6 +218,29 @@ export const Item = styled.li`
 	font-weight: 700;
 	font-family: ${fonts.font1};
 	cursor: pointer;
+
+	&.delivery {
+		display: none;
+
+		${media.tab} {
+			display: initial;
+			display: flex;
+			gap: ${margins.gapShape};
+			justify-content: center;
+			align-items: center;
+		}
+
+		.delivery__icon {
+			max-width: 35px;
+			object-fit: contain;
+		}
+
+		.delivery__concat {
+			font-size: 1.4rem;
+			color: ${colors.mainColor};
+			font-weight: 700;
+		}
+	}
 
 	${media.tab} {
 		font-size: ${sizes.size4};

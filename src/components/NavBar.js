@@ -35,6 +35,10 @@ function NavBar() {
 					<Item>menu</Item>
 					<Item>our story</Item>
 					<Item>contact us</Item>
+					<Item className="delivery">
+						<img src={Icon} alt="delivery icon" className="delivery__icon"/>
+						<p className="delivery__concat">Express Delivery +1 234 567 890</p>
+					</Item>
 				</Items>
 			</ItemsWrapper>
 		</Nav>
