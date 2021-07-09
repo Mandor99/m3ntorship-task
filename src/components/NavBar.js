@@ -19,11 +19,17 @@ function NavBar() {
 			<LogoWrapper>
 				<Logo src={`${LogoImg}`} alt='burger home logo' />
 			</LogoWrapper>
-			<ItemsWrapper>
+			<input type="checkbox" name="navCheckbox" id="navCheckbox" className="nav__checkbox" />
+				<label htmlFor="navCheckbox" className="nav__toggler">
+					<span className="nav__toggler--icon">&nbsp;</span>
+				</label>
+				<div className="nav__bg"></div>
+			<ItemsWrapper className="nav__wrapper">
 				<PhoneCallWrapper>
 					<IconDelivery src={Icon} alt='delivery icon' />
 					<PhoneDetails>Express Delivery +1 234 567 890</PhoneDetails>
 				</PhoneCallWrapper>
+
 				<Items>
 					<Item>home</Item>
 					<Item>menu</Item>

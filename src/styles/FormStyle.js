@@ -3,6 +3,7 @@ import {
 	colors,
 	fonts,
 	margins,
+	media,
 	paddings,
 	shadows,
 	sizes,
@@ -12,6 +13,7 @@ export const Section = styled.section`
 	margin-top: ${margins.marginOuter2};
 	position: relative;
 	text-align: center;
+	overflow-x: clip;
 
 	& img.bottle {
 		position: absolute;
@@ -19,6 +21,15 @@ export const Section = styled.section`
 		left: -38%;
 		height: 55%;
 		filter: drop-shadow(${shadows.shadow3});
+
+		${media.desk} {
+			top: 50%;
+			height: 45%;
+		}
+
+		${media.tab} {
+			display: none;
+		}
 	}
 
 	& img.burger {
@@ -27,6 +38,18 @@ export const Section = styled.section`
 		left: -44%;
 		height: 44%;
 		filter: drop-shadow(${shadows.shadow3});
+
+		${media.desk} {
+			height: 35%;
+		}
+
+		${media.tab} {
+			height: 27%;
+		}
+
+		${media.mobile} {
+			display: none;
+		}
 	}
 
 	& img.plate {
@@ -36,7 +59,20 @@ export const Section = styled.section`
 		height: 65%;
 		right: -45%;
 		transform: rotate(45deg);
-		/* overflow-x: clip; */
+
+		${media.desk} {
+			bottom: -16%;
+			height: 55%;
+		}
+
+		${media.tab} {
+			height: 37%;
+			right: -47%;
+		}
+
+		${media.mobile} {
+			display: none;
+		}
 	}
 
 	& .img-responsive {
@@ -86,6 +122,10 @@ export const Input = styled.input`
 	&::placeholder {
 		text-transform: uppercase;
 	}
+
+	${media.tab} {
+		line-height: 40px;
+	}
 `;
 
 export const BtnForm = styled.button`
@@ -109,4 +149,13 @@ export const FormStyle = styled.form`
 	width: 65%;
 	margin: 0 auto;
 	position: relative;
+
+	${media.tab} {
+		width: 90%;
+	}
+
+	${media.mobile} {
+		width: 100%;
+		grid-template-columns: 1fr;
+	}
 `;

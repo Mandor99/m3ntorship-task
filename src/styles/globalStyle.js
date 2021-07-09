@@ -1,30 +1,9 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyle = createGlobalStyle`
-    *, *::before, *::after {
-        padding: 0;
-        margin: 0;
-        box-sizing: inherit;
-    }
-    html, body {
-        box-sizing: border-box;
-    }
-    html {
-        font-size: 100%;
-    }
-    body {
-        /* min-height: 1000vh; //test */
-		overflow-x: hidden;
-    }
-	li {
-		list-style: none;
-	}
-	a {
-		text-decoration: none;
-	}
-`;
 export const colors = {
 	mainColor: '#3d2514',
+	lightColor3: 'rgba(255, 193, 69, 0.9)',
+	darkColor3: 'rgba(255, 193, 69, 0.9)',
 	color1: '#bf2222',
 	color2: '#3d2514',
 	color3: '#ffc045',
@@ -56,6 +35,7 @@ export const paddings = {
 	paddingBtn3: '.5rem 1.8rem',
 	paddingBtn4: '1.2rem 1.5rem',
 	paddingTxt: '1.8rem 1.5rem',
+	padding5Desk: '6rem',
 };
 
 export const margins = {
@@ -89,23 +69,71 @@ export const sizes = {
 	size8: '7.1rem',
 	size9: '3.5rem',
 	size10: '4.3rem',
+	size11: '5.5rem',
+	size12: '1.2rem',
+	size13: '4rem',
+	size14: '2.5rem',
+	size15: '2rem',
 };
 
 export const bp = {
-	mobile: '500px',
+	mobileSm: '350px',
+	mobile: '540px',
 	tab: '768px',
 	lap: '992px',
 	desk: '1200px',
 };
 
 export const media = {
+	mobileSm: `@media only screen and (max-width: ${bp.mobileSm})`,
 	mobile: `@media only screen and (max-width: ${bp.mobile})`,
 	tab: `@media only screen and (max-width: ${bp.tab})`,
 	lap: `@media only screen and (max-width: ${bp.lap})`,
+	desk: `@media only screen and (max-width: ${bp.desk})`,
 };
+
+export const GlobalStyle = createGlobalStyle`
+    *, *::before, *::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: inherit;
+    }
+    html, body {
+        box-sizing: border-box;
+    }
+    html {
+        font-size: 100%;
+
+		${media.desk} {
+			font-size: 85%;
+		}
+
+		${media.tab} {
+			font-size: 75%;
+		}
+
+		${media.mobile} {
+			font-size: 65%;
+		}
+    }
+    body {
+        /* min-height: 1000vh; //test */
+		overflow-x: hidden;
+    }
+	li {
+		list-style: none;
+	}
+	a {
+		text-decoration: none;
+	}
+`;
 
 export const Container = styled.div`
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+
+	${media.mobileSm} {
+		width: 100%;
+	}
 `;

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { fonts, margins, paddings, sizes } from './globalStyle';
+import { fonts, margins, paddings, sizes, media } from './globalStyle';
 
 export const Section = styled.section`
 	margin-top: ${margins.marginOuter2};
@@ -10,8 +10,11 @@ export const MealsWrapper = styled.div`
 	display: flex;
 	justify-content: space-between;
 	position: relative;
-
 	gap: 2vw;
+
+	${media.tab} {
+		flex-wrap: wrap;
+	}
 `;
 
 export const Box1 = styled.div`
@@ -19,6 +22,14 @@ export const Box1 = styled.div`
 	background: ${(props) => `url(${props.image})`} no-repeat center/cover;
 	height: 59vh;
 	border-radius: 10px;
+
+	${media.tab} {
+		flex: 1 1 100%;
+	}
+
+	${media.mobile} {
+		height: 45vh;
+	}
 `;
 
 export const Box2 = styled.div`
@@ -27,6 +38,16 @@ export const Box2 = styled.div`
 	flex-direction: column;
 	justify-content: space-between;
 	gap: 2vw;
+
+	${media.tab} {
+		flex: 1 1 100%;
+		flex-direction: row;
+	}
+
+	${media.mobile} {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
 `;
 
 export const Fig2 = styled.div`
@@ -35,6 +56,10 @@ export const Fig2 = styled.div`
 	width: 95%;
 	border-radius: 10px;
 	position: relative;
+
+	${media.mobile} {
+		width: 100%;
+	}
 `;
 
 export const Caption = styled.article`
@@ -47,16 +72,4 @@ export const Caption = styled.article`
 	/* position: absolute; */
 	letter-spacing: 0.1rem;
 	padding: ${paddings.paddingTxt};
-
-	&.caption__big {
-		/* top: 0; */
-	}
-
-	&.caption__sm-1 {
-		/* top: 4.5rem; */
-	}
-
-	&.caption__sm-2 {
-		/* top: 5.5rem; */
-	}
 `;

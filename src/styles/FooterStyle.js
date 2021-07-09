@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import footerImage from '../images/footerBG.png';
-import { fonts, margins, paddings, sizes } from './globalStyle';
+import { fonts, margins, media, paddings, sizes } from './globalStyle';
 
 export const FooterStyle = styled.footer`
 	margin-top: ${margins.marginOuter2};
@@ -8,12 +8,8 @@ export const FooterStyle = styled.footer`
 `;
 
 export const Wrapper = styled.div`
-	/* height: 70vh; */
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 		url(${footerImage}) no-repeat center center/cover;
-
-	/* display: flex;
-	flex-direction: column; */
 `;
 
 export const Box1 = styled.div`
@@ -25,6 +21,19 @@ export const Box1 = styled.div`
 
 	& > * {
 		flex: 0 0 50%;
+
+		${media.mobile} {
+			flex: 1 1 100%;
+		}
+	}
+
+	${media.desk} {
+		padding-bottom: ${paddings.padding5Desk};
+	}
+
+	${media.mobile} {
+		flex-direction: column;
+		gap: ${margins.gap1};
 	}
 `;
 
@@ -50,6 +59,14 @@ export const Info = styled.p`
 	font-family: ${fonts.font3};
 	/* margin-top: ${margins.gap1}; */
 	flex-basis: 45%;
+
+	${media.desk} {
+		line-height: 20px;
+	}
+
+	${media.mobile} {
+		width: 80%;
+	}
 `;
 const size = '2rem';
 export const Contact = styled.div`
@@ -72,6 +89,14 @@ export const Contact = styled.div`
 				color: #fff;
 				font-weight: 700;
 				font-family: ${fonts.font1};
+
+				${media.desk} {
+					line-height: 33px;
+				}
+
+				${media.mobile} {
+					font-size: ${sizes.size3};
+				}
 			}
 		}
 	}
@@ -90,6 +115,7 @@ export const Box2 = styled.div`
 		font-size: ${sizes.size3};
 		font-weight: 400;
 		font-family: ${fonts.font1};
+		align-self: center;
 	}
 
 	& .icon-wrapper {

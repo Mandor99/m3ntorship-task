@@ -9,6 +9,7 @@ import {
 	Section,
 } from '../styles/Meals2Style';
 import Meal1 from '../images/leftMeal.png';
+import Meal1Desk from '../images/leftMealDesk.png';
 import Meal2 from '../images/topMeal.png';
 import Meal3 from '../images/bottomMeal.png';
 
@@ -17,7 +18,7 @@ function Meals2() {
 		<Section>
 			<Container>
 				<MealsWrapper>
-					<Box1 image={Meal1}>
+					<Box1 image={Meal1} imageDesk={Meal1Desk}>
 						<Caption className='caption__big'>
 							<h4>try it today</h4>
 							<h2>Most Popular Burger</h2>

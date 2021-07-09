@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors, fonts, margins, paddings, sizes } from './globalStyle';
+import { colors, fonts, margins, paddings, sizes, media } from './globalStyle';
 
 export const Section = styled.section`
 	margin-top: ${margins.gap5};
@@ -45,10 +45,22 @@ export const Wrapper = styled.div`
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+
+	${media.tab} {
+		gap: 5vw;
+	}
 `;
 
 export const Burger = styled.figure`
 	flex-basis: 30%;
+
+	${media.tab} {
+		flex: 1 1 45%;
+	}
+
+	${media.mobile} {
+		flex: 1 1 100%;
+	}
 
 	& img.img-responsive {
 		height: 208px;
@@ -87,4 +99,8 @@ export const Btn2 = styled.button`
 	padding: ${paddings.paddingBtn3};
 	border: none;
 	cursor: pointer;
+
+	${media.mobile} {
+		margin: ${margins.gap0};
+	}
 `;

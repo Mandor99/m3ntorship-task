@@ -6,10 +6,15 @@ import {
 	fonts,
 	colors,
 	sizes,
+	media,
 } from './globalStyle';
 
 export const Section = styled.section`
 	margin-top: ${margins.marginOuter1};
+
+	${media.tab} {
+		margin-top: ${margins.marginOuter2};
+	}
 `;
 
 export const Wrapper = styled.div`
@@ -31,6 +36,11 @@ export const Box1 = styled.article`
 	padding-top: ${paddings.padding2};
 	padding-bottom: ${paddings.padding2};
 	position: relative;
+
+	${media.tab} {
+		flex: 1 1 100%;
+		text-align: center;
+	}
 `;
 
 export const SubTitle = styled.h4`
@@ -60,18 +70,32 @@ export const Info = styled.p`
 	font-family: ${fonts.font3};
 	margin-top: ${margins.gap6};
 	transition: all 0.3s ease-in-out;
+
+	${media.desk} {
+		line-height: 25px;
+	}
+
+	${media.tab} {
+		margin-bottom: ${margins.gapItems};
+	}
 `;
 
 export const Box2 = styled.div`
-height: 70vh;
+	height: 70vh;
 	& img {
-		/* height: 70vh; */
 		height: 100%;
 
 		&.img-responsive {
 			width: 100%;
-			/* object-fit: cover; */
 		}
+	}
+	${media.desk} {
+		height: 60vh;
+	}
+
+	${media.tab} {
+		display: none;
+	}
 `;
 
 export const DotsWrapper = styled.div`
@@ -79,6 +103,11 @@ export const DotsWrapper = styled.div`
 	gap: 8px;
 	position: absolute;
 	bottom: 1.5rem;
+
+	${media.tab} {
+		left: 50%;
+		transform: translateX(-50%);
+	}
 `;
 
 export const Dot = styled.span`
